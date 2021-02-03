@@ -27,7 +27,7 @@ pipeline {
         stage('Deployement') {
             steps {
                 echo "Deployement"
-                sh 'sudo cp /var/lib/jenkins/workspace/AddressBookPipeline1/target/addressbook.war /usr/share/tomcat/webapps/'
+                sh 'sudo cp /var/lib/jenkins/workspace/AddressBookPipeline/target/addressbook.war /usr/share/tomcat/webapps/'
             }
         }
     }
